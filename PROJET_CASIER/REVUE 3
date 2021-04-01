@@ -1,0 +1,36 @@
+🍎️lire la carte : 
+lecture du badge -> envoyer le numero de badge 
+affichage du numero
+
+🍎️prendre des photos :
+chemin vers repertoire
+script de suppression images -> datetime
+images stockées sur un serveur linux : partage nfs
+machine virtual sous debian avec serveur
+
+stockage des images pendant 2 semaines
+
+
+🍎️ip raspberry : 172.18.58.216
+raspberry, caméra, lecteur, câbles, badge
+distance entre la caméra et les casiers (angle de vision, calcul de distance)
+distance camera-casier : D = f/g + 2f + 2g soit 
+focale/(taille objet/taille image) + 2*focale + 2*(taille objet/taille image)
+~10.83*6.1 cm
+
+🍎️Calcul taille image :
+1280 * 2.54 / 300 = 10.83 cm
+720 * 2.54 / 300 = 6.1 cm
+
+
+🍎️Calcul diagonal : 
+(10.83)^2 + (6.1)^2 = 154.4989
+racine(154.4989) = 12.429
+12.429*2.54 = 31.569 cm
+
+🍎️Calcul focal :
+31.569 / 2*tan(60/2) = -2.46
+
+🍎️Calcul distance camera / objet :
+(-2.46 / (2/31.569*10e-3)) + (2*(-2.46)) + (2*(2/31.569*10e-3)) = 121.74
+
